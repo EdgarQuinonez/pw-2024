@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form>
+      <label>
+        <p>Nombre:</p>
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" />
+      </label>
+      <label>
+        <p>Email:</p>
+        <input type="text" name="email" placeholder="Escribe tu email" />
+      </label>
+      <div>
+        <p>Sistemas Operativos que manejas:</p>
+        <label>
+          <input type="checkbox" name="sistemas[]" value="Windows" /> Windows
+        </label>
+        <label>
+          <input type="checkbox" name="sistemas[]" value="Linux" /> Linux
+        </label>
+        <label>
+          <input type="checkbox" name="sistemas[]" value="Mac" /> Mac
+        </label>
+      </div>
+      <div>
+        <p>Sistema operativo preferido:</p>
+        <label>
+          <input type="radio" name="sistemaPreferido" value="Windows" /> Windows
+        </label>
+        <label>
+          <input type="radio" name="sistemaPreferido" value="Linux" /> Linux
+        </label>
+        <label>
+          <input type="radio" name="sistemaPreferido" value="Mac" /> Mac
+        </label>
+      </div>
+
+      <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+        <button type="button">Cambio de color</button>
+      </div>
+    </form>
+  </body>
+</html>
