@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Structure</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      nav,
+      section,
+      article,
+      aside,
+      footer {
+        border: 1px solid #ddd;
+        margin: 10px;
+        padding: 15px;
+      }
+      header {
+        background-color: #f8f9fa;
+        text-align: center;
+      }
+      nav {
+        background-color: #e9ecef;
+      }
+      section {
+        display: flex;
+        justify-content: space-between;
+      }
+      article {
+        flex: 3;
+        margin-right: 10px;
+      }
+      aside {
+        flex: 1;
+        background-color: #f1f3f5;
+      }
+      footer {
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Understanding Basic HTML Tags</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#header">Header</a></li>
+        <li><a href="#nav">Nav</a></li>
+        <li><a href="#section">Section</a></li>
+        <li><a href="#article">Article</a></li>
+        <li><a href="#aside">Aside</a></li>
+        <li><a href="#footer">Footer</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <article>
+        <h2>HTML Tags Overview</h2>
+        <p>
+          <strong>&lt;header&gt;:</strong> Defines the header section of a
+          webpage, typically containing the website's logo, title, or navigation
+          links.
+        </p>
+        <p>
+          <strong>&lt;nav&gt;:</strong> Represents a section of navigation
+          links, used for navigating through the website's content.
+        </p>
+        <p>
+          <strong>&lt;section&gt;:</strong> A semantic section tag used to group
+          content into thematic areas, like different topics of an article.
+        </p>
+        <p>
+          <strong>&lt;article&gt;:</strong> Defines independent, self-contained
+          content. In this case, it's used to describe the purpose of the other
+          tags.
+        </p>
+        <p>
+          <strong>&lt;aside&gt;:</strong> Represents content related to the main
+          content, like sidebars, ads, or additional info.
+        </p>
+        <p>
+          <strong>&lt;footer&gt;:</strong> Defines the footer section, usually
+          containing copyright, contact information, or social media links.
+        </p>
+      </article>
+
+      <aside>
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#header">Go to Header</a></li>
+          <li><a href="#nav">Go to Nav</a></li>
+          <li><a href="#section">Go to Section</a></li>
+          <li><a href="#article">Go to Article</a></li>
+          <li><a href="#aside">Go to Aside</a></li>
+          <li><a href="#footer">Go to Footer</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Web Design Basics</p>
+    </footer>
+  </body>
+</html>

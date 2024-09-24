@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scripting Tags Overview</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      nav,
+      main,
+      section,
+      footer {
+        border: 1px solid #ddd;
+        margin: 10px;
+        padding: 15px;
+      }
+      header {
+        background-color: #f8f9fa;
+        text-align: center;
+      }
+      nav {
+        background-color: #e9ecef;
+        margin-bottom: 20px;
+      }
+      main {
+        display: flex;
+        justify-content: space-between;
+      }
+      article {
+        flex: 3;
+        margin-right: 10px;
+      }
+      aside {
+        flex: 1;
+        background-color: #f1f3f5;
+      }
+      footer {
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 10px 0;
+      }
+      object,
+      embed,
+      applet {
+        display: block;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Scripting Tags in HTML</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#script">Script</a></li>
+        <li><a href="#noscript">Noscript</a></li>
+        <li><a href="#embed">Embed</a></li>
+        <li><a href="#applet">Applet</a></li>
+        <li><a href="#object">Object</a></li>
+        <li><a href="#param">Param</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h2>Scripting Tags Overview</h2>
+
+        <h3 id="script">&lt;script&gt;</h3>
+        <p>
+          The script tag is used to define client-side JavaScript. It is used to
+          embed or reference executable code.
+        </p>
+        <p><strong>Important Attributes:</strong></p>
+        <ul>
+          <li>
+            <strong>src</strong>: Specifies the external file containing the
+            script.
+          </li>
+          <li>
+            <strong>async</strong>: Loads the script asynchronously, without
+            blocking the page.
+          </li>
+          <li>
+            <strong>defer</strong>: Delays script execution until after the
+            document has been parsed.
+          </li>
+        </ul>
+
+        <h3 id="noscript">&lt;noscript&gt;</h3>
+        <p>
+          The noscript tag defines alternate content to be displayed if
+          JavaScript is disabled in the user's browser.
+        </p>
+
+        <h3 id="embed">&lt;embed&gt;</h3>
+        <p>
+          The embed tag is used to embed external resources such as media,
+          plugins, or content from another site. It is commonly used for
+          multimedia like audio and video.
+        </p>
+        <p><strong>Important Attributes:</strong></p>
+        <ul>
+          <li>
+            <strong>src</strong>: Specifies the source of the embedded resource.
+          </li>
+          <li>
+            <strong>type</strong>: Defines the MIME type of the embedded
+            content.
+          </li>
+          <li>
+            <strong>width</strong> and <strong>height</strong>: Set the size of
+            the embedded content.
+          </li>
+        </ul>
+
+        <h3 id="applet">&lt;applet&gt;</h3>
+        <p>
+          The applet tag is used to embed Java applets (small applications) in a
+          webpage. It is now deprecated in favor of object and embed for
+          security reasons.
+        </p>
+        <p><strong>Important Attributes:</strong></p>
+        <ul>
+          <li>
+            <strong>code</strong>: Specifies the applet class file to be loaded.
+          </li>
+          <li>
+            <strong>width</strong> and <strong>height</strong>: Define the size
+            of the applet area.
+          </li>
+          <li>
+            <strong>archive</strong>: Points to an archive (usually a JAR file)
+            containing the applet class.
+          </li>
+        </ul>
+
+        <h3 id="object">&lt;object&gt;</h3>
+        <p>
+          The object tag is used to embed multimedia (like images, videos,
+          audio, or PDF files) or interactive content (like Java applets or
+          Flash) into a webpage.
+        </p>
+        <p><strong>Important Attributes:</strong></p>
+        <ul>
+          <li>
+            <strong>data</strong>: Specifies the URL of the resource to be
+            embedded.
+          </li>
+          <li><strong>type</strong>: Defines the MIME type of the resource.</li>
+          <li>
+            <strong>width</strong> and <strong>height</strong>: Set the size of
+            the embedded content.
+          </li>
+        </ul>
+
+        <h3 id="param">&lt;param&gt;</h3>
+        <p>
+          The param tag defines parameters for plugins or external content used
+          within object or applet elements.
+        </p>
+        <p><strong>Important Attributes:</strong></p>
+        <ul>
+          <li><strong>name</strong>: The name of the parameter.</li>
+          <li>
+            <strong>value</strong>: The value of the parameter being passed.
+          </li>
+        </ul>
+      </article>
+
+      <aside>
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#script">Go to Script</a></li>
+          <li><a href="#noscript">Go to Noscript</a></li>
+          <li><a href="#embed">Go to Embed</a></li>
+          <li><a href="#applet">Go to Applet</a></li>
+          <li><a href="#object">Go to Object</a></li>
+          <li><a href="#param">Go to Param</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <section>
+      <h2>Interactive Examples</h2>
+
+      <h3>Script Example</h3>
+      <script>
+        document.write(
+          "<p>This message is generated by JavaScript inside the &lt;script&gt; tag.</p>"
+        );
+      </script>
+
+      <h3>Noscript Example</h3>
+      <noscript>
+        <p>
+          This message is displayed because JavaScript is disabled or not
+          supported.
+        </p>
+      </noscript>
+
+      <h3>Embed Example</h3>
+      <embed
+        src="https://www.w3.org/2010/05/video/mediaevents.mp4"
+        type="video/mp4"
+        width="300"
+        height="200"
+      />
+
+      <h3>Applet Example (Deprecated)</h3>
+      <p>Applets are no longer widely supported. The tag is deprecated.</p>
+
+      <h3>Object Example</h3>
+      <object
+        data="https://www.w3.org/2010/05/video/mediaevents.mp4"
+        type="video/mp4"
+        width="300"
+        height="200"
+      >
+        <param name="autoplay" value="true" />
+        <p>
+          Your browser does not support the object tag, please use a modern
+          browser.
+        </p>
+      </object>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Scripting Tags Overview</p>
+    </footer>
+  </body>
+</html>
