@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, aside, footer {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 15px;
+        }
+        header {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        nav {
+            background-color: #e9ecef;
+            margin-bottom: 20px;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+        article {
+            flex: 3;
+            margin-right: 10px;
+        }
+        aside {
+            flex: 1;
+            background-color: #f1f3f5;
+        }
+        footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px 0;
+        }
+        dialog {
+            border: 1px solid #000;
+            padding: 20px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>HTML5 Advanced Semantic Tags</h1>
+            <h2>Understanding New Elements</h2>
+        </hgroup>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#hgroup">Hgroup</a></li>
+            <li><a href="#main">Main</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#dialog">Dialog</a></li>
+            <li><a href="#data">Data</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>HTML5 Tags Overview</h2>
+            <p><strong>&lt;hgroup&gt;:</strong> Groups a set of headings, typically a main heading and a subheading, to represent the same entity or section.</p>
+            <p><strong>&lt;main&gt;:</strong> Represents the main content of the document, where the core information resides.</p>
+            <p><strong>&lt;search&gt;:</strong> Although not widely implemented yet, it's intended to encapsulate search functionality, helping search engines identify it.</p>
+            <p><strong>&lt;details&gt;:</strong> Creates a collapsible element that users can open and close to reveal or hide additional content.</p>
+            <p><strong>&lt;dialog&gt;:</strong> Defines a dialog box or a window for user interaction, which can be opened programmatically.</p>
+            <p><strong>&lt;summary&gt;:</strong> Defines a summary or heading for the `<details>` element, which can be clicked to reveal the hidden content.</p>
+            <p><strong>&lt;data&gt;:</strong> Links a given content to a specific machine-readable value, useful for associating human-readable text with numbers or codes.</p>
+        </article>
+
+        <aside>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#hgroup">Go to Hgroup</a></li>
+                <li><a href="#main">Go to Main</a></li>
+                <li><a href="#search">Go to Search</a></li>
+                <li><a href="#details">Go to Details</a></li>
+                <li><a href="#dialog">Go to Dialog</a></li>
+                <li><a href="#data">Go to Data</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <section>
+        <h2>Interactive Example</h2>
+
+        <search>
+            <label for="site-search">Search the site:</label>
+            <input type="search" id="site-search" name="q">
+            <button>Search</button>
+        </search>
+
+        <details>
+            <summary>Click here for more information</summary>
+            <p>This is extra content revealed by the `<details>` tag. It can be toggled open or closed.</p>
+        </details>
+
+        <dialog open>
+            <p>This is a dialog box, often used for interactive modals.</p>
+            <button onclick="this.parentElement.removeAttribute('open')">Close</button>
+        </dialog>
+
+        <p>The price of gold is <data value="1910">$1910</data> per ounce.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Advanced HTML Tags</p>
+    </footer>
+</body>
+</html>
